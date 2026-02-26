@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arvind Swami Ganeshan — Site Reliability Engineer specialising in observability, production reliability, and infrastructure automation. Based in the UK.">
+    <meta name="keywords" content="Site Reliability Engineer, SRE, Observability, Dynatrace, PagerDuty, Python, Ansible, DevOps, UK, Platform Engineer">
+    <meta name="author" content="Arvind Swami Ganeshan">
+
+    <!-- Open Graph for LinkedIn/Social sharing -->
+    <meta property="og:title" content="Arvind Swami Ganeshan — Site Reliability Engineer">
+    <meta property="og:description" content="SRE specialising in observability, incident response, and infrastructure automation. 5+ years in regulated financial services.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arvindswami014uk.github.io/arivndganeshan-portfolio/">
+    <meta property="og:image" content="assets/profile.jpg">
+
+    <title>Arvind Swami Ganeshan | Site Reliability Engineer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ============================================ -->
+    <!-- NAVIGATION -->
+    <!-- ============================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">{</span> ASG <span class="logo-bracket">}</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Insights</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="assets/arvind-ganeshan-cv.pdf" class="nav-cta" target="_blank" rel="noopener">
+                <i class="fas fa-download"></i> Download CV
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============================================ -->
+    <!-- HERO SECTION -->
+    <!-- ============================================ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-pattern"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-name">Arvind Swami<br>Ganeshan</h1>
+                    <h2 class="hero-title">Site Reliability Engineer</h2>
+                    <p class="hero-subtitle">
+                        Observability &bull; Incident Response &bull; Infrastructure Automation
+                    </p>
+                    <p class="hero-description">
+                        I keep production systems reliable, observable, and resilient.
+                        5+ years ensuring uptime across regulated financial services
+                        environments using Dynatrace, PagerDuty, Python, and Ansible.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="25">0</span><span class="stat-suffix">%</span>
+                            <span class="stat-label">Downtime Reduced</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="30">0</span><span class="stat-suffix">%</span>
+                            <span class="stat-label">Faster MTTR</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="30">0</span><span class="stat-suffix">K+</span>
+                            <span class="stat-label">Servers Automated</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="180">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">Hours Saved</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> Get in Touch
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <i class="fas fa-diagram-project"></i> View Projects
+                        </a>
+                    </div>
+                    <div class="hero-availability">
+                        <span class="availability-dot"></span>
+                        Available immediately &bull; UK Graduate Visa (valid until end of 2026) &bull; UK-wide
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                            <span class="terminal-title">sre@production ~ </span>
+                        </div>
+                        <div class="terminal-body" id="terminalBody">
+                            <div class="terminal-line">
+                                <span class="prompt">$</span>
+                                <span class="command" id="typingText"></span>
+                                <span class="cursor">|</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- ABOUT SECTION -->
+    <!-- ============================================ -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I am a Site Reliability Engineer with over five years of experience
+                        ensuring uptime, performance, and operational excellence across
+                        enterprise production environments in regulated financial services.
+                    </p>
+                    <p>
+                        At <strong>BNP Paribas</strong>, I owned on-call incident response using
+                        PagerDuty, built full-stack observability with Dynatrace across 4,000+
+                        servers, and automated deployments across 30,000+ servers using Python
+                        and Ansible — saving 180+ hours and reducing manual effort by 85%.
+                    </p>
+                    <p>
+                        My approach to reliability is simple: every alert should be actionable,
+                        every deployment should be reversible, and every incident should make the
+                        system stronger. I focus on building observability that prevents outages,
+                        automation that eliminates toil, and processes that make on-call sustainable.
+                    </p>
+                    <p>
+                        I hold an MSc from <strong>Cranfield University</strong> and have recently
+                        completed the <strong>McKinsey Forward Programme</strong>. I am currently
+                        pursuing AWS Solutions Architect Associate and CKA certifications.
+                    </p>
+                </div>
+                <div class="about-details">
+                    <div class="detail-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Location</strong>
+                            <span>Church Stretton, Shropshire, UK</span>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <i class="fas fa-briefcase"></i>
+                        <div>
+                            <strong>Experience</strong>
+                            <span>5+ years in production reliability</span>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <i class="fas fa-id-card"></i>
+                        <div>
+                            <strong>Right to Work</strong>
+                            <span>UK Graduate Visa (until end of 2026)</span>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Availability</strong>
+                            <span>Immediate</span>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <strong>Education</strong>
+                            <span>MSc Cranfield University</span>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <i class="fas fa-award"></i>
+                        <div>
+                            <strong>Programme</strong>
+                            <span>McKinsey Forward (2025)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SKILLS SECTION -->
+    <!-- ============================================ -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">Core competencies aligned to Site Reliability Engineering</p>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3>Production Reliability</h3>
+                    <ul>
+                        <li>High-availability systems</li>
+                        <li>SLA and SLO alignment</li>
+                        <li>MTTR reduction</li>
+                        <li>Post-incident reviews</li>
+                        <li>Error budget management</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-bell"></i></div>
+                    <h3>On-Call and Incident Response</h3>
+                    <ul>
+                        <li>PagerDuty</li>
+                        <li>Incident triage and escalation</li>
+                        <li>Root cause analysis</li>
+                        <li>Blameless post-mortems</li>
+                        <li>ITIL incident/problem/change</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Observability Engineering</h3>
+                    <ul>
+                        <li>Dynatrace (full-stack)</li>
+                        <li>Custom dashboards and alerting</li>
+                        <li>Management zones</li>
+                        <li>Geneos and XPOLOG</li>
+                        <li>Prometheus and Grafana</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Automation for Reliability</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Ansible</li>
+                        <li>Bash scripting</li>
+                        <li>Perl</li>
+                        <li>Toil elimination</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Cloud and Infrastructure</h3>
+                    <ul>
+                        <li>AWS (EC2, S3, Marketplace)</li>
+                        <li>ServiceNow catalogue workflows</li>
+                        <li>Capacity planning</li>
+                        <li>Docker (hands-on)</li>
+                        <li>Kubernetes (hands-on)</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-code-branch"></i></div>
+                    <h3>CI/CD and Release Stability</h3>
+                    <ul>
+                        <li>Jenkins</li>
+                        <li>GitHub Actions</li>
+                        <li>Git and Bitbucket</li>
+                        <li>Deployment failure remediation</li>
+                        <li>Release reliability</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                    <h3>Linux and Systems</h3>
+                    <ul>
+                        <li>RHEL and CentOS</li>
+                        <li>Performance troubleshooting</li>
+                        <li>Log analysis</li>
+                        <li>SQL-based production triage</li>
+                        <li>Oracle and PL-SQL</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-file-shield"></i></div>
+                    <h3>Governance and Compliance</h3>
+                    <ul>
+                        <li>Netwrix Change Tracker</li>
+                        <li>ITIL change management</li>
+                        <li>Confluence runbooks</li>
+                        <li>NIST and ISO 27001</li>
+                        <li>Audit evidence</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- EXPERIENCE SECTION -->
+    <!-- ============================================ -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">5+ years of production reliability and observability engineering</p>
+
+            <div class="timeline">
+
+                <!-- Outlier.ai -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Reliability and CI/CD Optimisation Consultant</h3>
+                                <p class="company">Outlier.ai <span class="location">| UK (Remote)</span></p>
+                            </div>
+                            <span class="date">Feb 2025 — Present</span>
+                        </div>
+                        <ul>
+                            <li>Improved application reliability by optimising Java and Python services, reducing recurring production defects by <strong>20%</strong> across <strong>10 repositories</strong></li>
+                            <li>Stabilised CI/CD pipelines (Jenkins and GitHub Actions), reducing release-blocking failures by <strong>35%</strong> across <strong>6 projects</strong></li>
+                            <li>Conducted structured dependency reviews to prevent production regressions and improve deployment confidence</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Jenkins</span><span>GitHub Actions</span><span>Python</span><span>Java</span><span>CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Muller -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Operational Reliability Engineer</h3>
+                                <p class="company">Müller Dairy UK <span class="location">| Shropshire, UK</span></p>
+                            </div>
+                            <span class="date">Oct 2024 — Jan 2025</span>
+                        </div>
+                        <ul>
+                            <li>Applied structured root cause analysis to reduce unplanned downtime by <strong>10%</strong></li>
+                            <li>Implemented KPI-based performance monitoring to improve throughput by <strong>6%</strong></li>
+                            <li>Strengthened process traceability, reducing documentation errors by <strong>30%</strong> across <strong>120 batches per week</strong></li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>RCA</span><span>KPI Monitoring</span><span>Process Control</span><span>SOP Compliance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BNP Paribas -->
+                <div class="timeline-item featured">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Site Reliability Analyst — Observability and Production Support</h3>
+                                <p class="company">BNP Paribas <span class="location">| Mumbai, India</span></p>
+                            </div>
+                            <span class="date">Oct 2022 — Sep 2023</span>
+                        </div>
+                        <div class="featured-badge"><i class="fas fa-star"></i> Core SRE Role</div>
+                        <ul>
+                            <li>Provided <strong>on-call production support</strong> via PagerDuty, owning incident triage for <strong>12 business-critical services</strong> with <strong>99%+ availability</strong></li>
+                            <li>Engineered Dynatrace observability improvements — alerting, dashboards, and management zones — reducing downtime by <strong>25%</strong> and improving MTTR by <strong>30%</strong></li>
+                            <li>Designed health-check automation combining Dynatrace, Linux diagnostics, and log analysis, reducing unplanned incidents by <strong>15%</strong></li>
+                            <li>Eliminated toil by automating deployments using Python and Ansible across <strong>30,000+ servers</strong>, saving <strong>180+ hours</strong> (85% effort reduction)</li>
+                            <li>Provisioned AWS infrastructure via ServiceNow catalogue workflows, reducing lead time by <strong>40%</strong></li>
+                            <li>Governed Netwrix Change Tracker integrity monitoring achieving <strong>98% audit coverage</strong> across <strong>1,200 APAC servers</strong></li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Dynatrace</span><span>PagerDuty</span><span>Python</span><span>Ansible</span>
+                            <span>AWS</span><span>Linux</span><span>ServiceNow</span><span>ITIL</span>
+                            <span>Netwrix</span><span>Geneos</span><span>XPOLOG</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Infosys Systems Engineer -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Systems Engineer — Production Reliability and Release Engineering</h3>
+                                <p class="company">Infosys Limited <span class="location">| Pune, India</span></p>
+                            </div>
+                            <span class="date">Sep 2021 — Sep 2022</span>
+                        </div>
+                        <ul>
+                            <li>Reduced production MTTR by <strong>25%</strong> via Linux troubleshooting and log analysis; improved SLA attainment to <strong>99%</strong></li>
+                            <li>Stabilised CI/CD releases (Jenkins and GitHub Actions), reducing failed deployments by <strong>20%</strong></li>
+                            <li>Closed <strong>12 critical Log4j vulnerabilities</strong> within <strong>7 days</strong></li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Linux</span><span>Jenkins</span><span>GitHub Actions</span><span>SQL</span><span>Oracle</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Infosys Senior Ops -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Senior Operations Executive — Platform Reliability and Automation</h3>
+                                <p class="company">Infosys Limited <span class="location">| Pune, India</span></p>
+                            </div>
+                            <span class="date">Sep 2020 — Sep 2021</span>
+                        </div>
+                        <ul>
+                            <li>Led Oracle database upgrades (10g to 19c) for <strong>8 applications</strong> with only <strong>2 hours downtime</strong></li>
+                            <li>Automated regression testing, improving efficiency by <strong>40%</strong></li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Oracle</span><span>PL-SQL</span><span>TestComplete</span><span>Gherkin</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Infosys Ops -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Operations Executive — Automation and Reliability</h3>
+                                <p class="company">Infosys Limited <span class="location">| Mumbai/Pune, India</span></p>
+                            </div>
+                            <span class="date">Sep 2018 — Sep 2020</span>
+                        </div>
+                        <ul>
+                            <li>Automated data processing pipelines using Perl, increasing throughput by <strong>500 files per day</strong> and reducing manual effort by <strong>60%</strong></li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Perl</span><span>Automation</span><span>Data Processing</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- PROJECTS SECTION -->
+    <!-- ============================================ -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Key Projects</h2>
+            <p class="section-subtitle">Production-impact projects demonstrating SRE capabilities</p>
+
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>IVELO Deployment Automation Platform</h3>
+                    <p class="project-org">BNP Paribas</p>
+                    <p>Orchestrated reliability-focused deployment automation across 30,000+ servers using Python and Ansible with full rollback traceability and automated SQL health checks.</p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <strong>30+</strong>
+                            <span>Deployments</span>
+                        </div>
+                        <div class="metric">
+                            <strong>30K+</strong>
+                            <span>Servers</span>
+                        </div>
+                        <div class="metric">
+                            <strong>85%</strong>
+                            <span>Effort Reduced</span>
+                        </div>
+                        <div class="metric">
+                            <strong>180+</strong>
+                            <span>Hours Saved</span>
+                        </div>
+                    </div>
+                    <div class="tech-tags">
+                        <span>Python</span><span>Ansible</span><span>SQL</span><span>Linux</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-chart-area"></i></div>
+                    <h3>Enterprise Observability and Alerting Platform</h3>
+                    <p class="project-org">BNP Paribas</p>
+                    <p>Designed and implemented full-stack observability across 4,000+ servers with Dynatrace dashboards and integrated alert routing into ServiceNow incident workflows.</p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <strong>50+</strong>
+                            <span>Dashboards</span>
+                        </div>
+                        <div class="metric">
+                            <strong>4K+</strong>
+                            <span>Servers</span>
+                        </div>
+                        <div class="metric">
+                            <strong>25%</strong>
+                            <span>Better Performance</span>
+                        </div>
+                    </div>
+                    <div class="tech-tags">
+                        <span>Dynatrace</span><span>Python</span><span>ServiceNow</span><span>SQL</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3>Global Compliance and Integrity Monitoring</h3>
+                    <p class="project-org">BNP Paribas</p>
+                    <p>Implemented file integrity and compliance monitoring across the APAC region using Netwrix Change Tracker, achieving full regulatory compliance within six months.</p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <strong>4K+</strong>
+                            <span>Servers</span>
+                        </div>
+                        <div class="metric">
+                            <strong>100%</strong>
+                            <span>Compliance</span>
+                        </div>
+                        <div class="metric">
+                            <strong>6</strong>
+                            <span>Months</span>
+                        </div>
+                    </div>
+                    <div class="tech-tags">
+                        <span>Netwrix</span><span>Dynatrace</span><span>Compliance</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-database"></i></div>
+                    <h3>Production Database Migration Validation</h3>
+                    <p class="project-org">LexisNexis (via Infosys)</p>
+                    <p>Engineered automated data validation routines for Oracle database upgrades, delivering zero data loss and reducing manual verification by 50%.</p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <strong>99.9%</strong>
+                            <span>Accuracy</span>
+                        </div>
+                        <div class="metric">
+                            <strong>0</strong>
+                            <span>Data Loss</span>
+                        </div>
+                        <div class="metric">
+                            <strong>50%</strong>
+                            <span>Less Manual Work</span>
+                        </div>
+                    </div>
+                    <div class="tech-tags">
+                        <span>Oracle</span><span>PL-SQL</span><span>Validation</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- BLOG / INSIGHTS SECTION -->
+    <!-- ============================================ -->
+    <section class="section blog" id="blog">
+        <div class="container">
+            <h2 class="section-title">SRE Insights</h2>
+            <p class="section-subtitle">Thoughts on reliability, observability, and production engineering</p>
+
+            <div class="blog-grid">
+
+                <article class="blog-card">
+                    <div class="blog-date">
+                        <span class="day">06</span>
+                        <span class="month">May</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="blog/deployment-automation-at-scale.html">What I Learnt Automating Deployments Across 30,000+ Servers</a></h3>
+                        <p>Most people think deployment automation is about writing scripts. It is not. It is about building trust. Here is how we built the IVELO platform at BNP Paribas.</p>
+                        <div class="blog-tags">
+                            <span>Automation</span><span>Python</span><span>Ansible</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-date">
+                        <span class="day">13</span>
+                        <span class="month">May</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="blog/monitoring-vs-observability.html">The Difference Between Monitoring and Observability</a></h3>
+                        <p>Monitoring tells you something is broken. Observability tells you why. Here is how we moved from alert noise to actionable insight using Dynatrace.</p>
+                        <div class="blog-tags">
+                            <span>Observability</span><span>Dynatrace</span><span>SRE</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-date">
+                        <span class="day">20</span>
+                        <span class="month">May</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="#">5 Linux Commands Every SRE Should Know by Heart</a></h3>
+                        <p>When PagerDuty wakes you at 3 AM, you do not need clever. You need fast and reliable. These are the commands I use on every on-call shift.</p>
+                        <div class="blog-tags">
+                            <span>Linux</span><span>On-Call</span><span>Troubleshooting</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- EDUCATION SECTION -->
+    <!-- ============================================ -->
+    <section class="section education" id="education">
+        <div class="container">
+            <h2 class="section-title">Education and Certifications</h2>
+
+            <div class="education-grid">
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-university"></i></div>
+                    <h3>Cranfield University</h3>
+                    <p class="edu-degree">MSc Management and Information Systems</p>
+                    <p class="edu-date">October 2023 — September 2024</p>
+                    <p>Dissertation: Digital Twin Data Security — NIST and ISO 27001 control mapping for secure data exchange in industrial IoT environments.</p>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-university"></i></div>
+                    <h3>University of Mumbai</h3>
+                    <p class="edu-degree">BSc Information Technology</p>
+                    <p class="edu-date">June 2015 — July 2018</p>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>McKinsey Forward Programme</h3>
+                    <p class="edu-degree">Completed 2025</p>
+                    <p>Strategic problem-solving, leadership communication, and stakeholder management for high-impact technical environments.</p>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-spinner fa-spin-pulse"></i></div>
+                    <h3>Currently Pursuing</h3>
+                    <p class="edu-degree">In Progress</p>
+                    <ul class="cert-list">
+                        <li>AWS Solutions Architect Associate</li>
+                        <li>Certified Kubernetes Administrator (CKA)</li>
+                        <li>HashiCorp Terraform Associate</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- CONTACT SECTION -->
+    <!-- ============================================ -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">
+                I am actively seeking SRE, Observability, and Platform Engineering roles in the UK.
+                Available immediately with the right to work.
+            </p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <a href="mailto:arvindswami014@gmail.com">arvindswami014@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone</strong>
+                            <a href="tel:+4407767978917">07767 978 917</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <strong>LinkedIn</strong>
+                            <a href="https://linkedin.com/in/arvindswami014" target="_blank" rel="noopener">linkedin.com/in/ArvindSwami014</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <strong>GitHub</strong>
+                            <a href="https://github.com/arvindswami014uk" target="_blank" rel="noopener">github.com/arvindswami014uk</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Location</strong>
+                            <span>Church Stretton, Shropshire, UK</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="SRE Opportunity / Collaboration">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell me about the role or opportunity..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- FOOTER -->
+    <!-- ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Arvind Swami Ganeshan. Built with reliability in mind.</p>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/arvindswami014" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/arvindswami014uk" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:arvindswami014@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
