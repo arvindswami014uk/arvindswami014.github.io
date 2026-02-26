@@ -4,22 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Arvind Swami Ganeshan — Site Reliability Engineer with 5+ years experience in observability, production reliability, and infrastructure automation. UK-based, available immediately.">
-    <meta name="keywords" content="Site Reliability Engineer, SRE, DevOps, Platform Engineer, Observability, UK">
-    <meta name="author" content="Arvind Swami Ganeshan">
-    <meta name="theme-color" content="#2563eb">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Arvind Swami Ganeshan — Site Reliability Engineer">
-    <meta property="og:description" content="SRE specialising in observability, incident response, and infrastructure automation. 5+ years in regulated financial services.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="./assets/profile.jpg">
+    <meta name="theme-color" content="#ffffff">
 
     <title>Arvind Swami Ganeshan | Site Reliability Engineer</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -30,173 +22,248 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <a href="#hero" class="nav-logo">ASG</a>
-            <ul class="nav-links" id="navlinks">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#portfolio">This Site</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <a href="./assets/arvind-ganeshan-cv.pdf" class="nav-cta" target="_blank">
-                <i class="fas fa-download"></i> Download CV
+    <nav class="nav" id="nav">
+        <div class="nav-content">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-brace">{</span>ASG<span class="logo-brace">}</span>
             </a>
-            <button class="nav-toggle" id="navtoggle" aria-label="Toggle menu">
-                <i class="fas fa-bars"></i>
+            <ul class="nav-links" id="navlinks">
+                <li><a href="#about">about</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#portfolio">this.site</a></li>
+            </ul>
+            <div class="nav-social">
+                <a href="https://github.com/arvindswami014uk" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/arvindswami014" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <button class="nav-toggle" id="navtoggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="hero">
-        <div class="container">
-            <div class="hero-grid">
-                <div class="hero-content">
-                    <div class="hero-badge">
-                        <span class="dot"></span>
-                        Available for SRE roles — UK Graduate Visa
+        <div class="gradient-bg"></div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">
+                    <span class="name-line">Arvind Swami</span>
+                    <span class="name-line gradient-text">Ganeshan</span>
+                </h1>
+                <p class="hero-title">
+                    <span class="typing-text" id="typingtext"></span>
+                    <span class="cursor">|</span>
+                </p>
+                <p class="hero-desc">
+                    Site Reliability Engineer specialising in <span class="highlight">observability</span>, 
+                    <span class="highlight">automation</span>, and <span class="highlight">production resilience</span>. 
+                    5+ years keeping systems reliable at scale.
+                </p>
+                <div class="hero-stats-row">
+                    <div class="mini-stat">
+                        <span class="mini-number">5+</span>
+                        <span class="mini-label">Years</span>
                     </div>
-                    <h1 class="hero-title">Site Reliability Engineer</h1>
-                    <p class="hero-role">Observability • Automation • Production Resilience</p>
-                    <p class="hero-description">
-                        I ensure enterprise systems stay reliable at scale. Five years maintaining 
-                        99.9%+ uptime across 30,000+ servers in regulated financial services 
-                        environments. Specialist in Dynatrace, PagerDuty, Python, and cloud infrastructure.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#contact" class="btn btn-primary">
-                            <i class="fas fa-envelope"></i> Get in Touch
-                        </a>
-                        <a href="#experience" class="btn btn-secondary">
-                            <i class="fas fa-briefcase"></i> View Experience
-                        </a>
+                    <div class="mini-stat">
+                        <span class="mini-number">30K+</span>
+                        <span class="mini-label">Servers</span>
+                    </div>
+                    <div class="mini-stat">
+                        <span class="mini-number">99.9%</span>
+                        <span class="mini-label">Uptime</span>
                     </div>
                 </div>
-                
-                <div class="hero-visual">
-                    <div class="profile-container">
-                        <div class="profile-image-wrapper">
-                            <img src="./assets/profile.jpg" alt="Arvind Swami Ganeshan — Site Reliability Engineer" class="profile-image" id="profileimage">
-                            <div class="profile-badge">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Open to Work</span>
-                            </div>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>get in touch</span>
+                    </a>
+                    <a href="./assets/arvind-ganeshan-cv.pdf" class="btn btn-secondary" target="_blank">
+                        <i class="fas fa-download"></i>
+                        <span>download cv</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div="code-header">
+                        <div class="code-dots">
+                            <span class="code-dot red"></span>
+                            <span class="code-dot yellow"></span>
+                            <span class="code-dot green"></span>
+                        </div>
+                        <span class="code-filename">sre-profile.ts</span>
+                    </div>
+                    <div class="code-body">
+                        <div class="code-line">
+                            <span class="line-num">1</span>
+                            <span class="code-content">
+                                <span class="keyword">const</span> <span class="var-name">sre</span> = {
+                            </span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-num">2</span>
+                            <span class="code-content indent">
+                                <span class="property">name</span>: <span class="string">'Arvind Ganeshan'</span>,
+                            </span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-num">3</span>
+                            <span class="code-content indent">
+                                <span class="property">role</span>: <span class="string">'Site Reliability Engineer'</span>,
+                            </span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-num">4</span>
+                            <span class="code-content indent">
+                                <span class="property">location</span>: <span class="string">'United Kingdom'</span>,
+                            </span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-num">5</span>
+                            <span class="code-content indent">
+                                <span class="property">status</span>: <span class="string status-active">'🟢 Open to work'</span>,
+                            </span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-num">6</span>
+                            <span class="code-content indent">
+                                <span class="property">skills</span>: [<span class="string">'Dynatrace'</span>, <span class="string">'Python'</span>, <span class="string">'AWS'</span>],
+                            </span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-num">7</span>
+                            <span class="code-content">};</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-num">8</span>
+                            <span class="code-content">
+                                <span class="comment">// Ready to keep your systems reliable ⚡</span>
+                            </span>
                         </div>
                     </div>
-                    
-                    <div class="stat-float top-right">
-                        <div class="number">5+</div>
-                        <div class="label">Years</div>
+                </div>
+
+                <!-- Floating cards -->
+                <div class="float-card float-card-1">
+                    <div class="float-icon">
+                        <i class="fas fa-server"></i>
                     </div>
-                    <div class="stat-float bottom-left">
-                        <div class="number">30K+</div>
-                        <div class="label">Servers</div>
+                    <div class="float-info">
+                        <span class="float-number">30K+</span>
+                        <span class="float-label">Servers Managed</span>
+                    </div>
+                </div>
+
+                <div class="float-card float-card-2">
+                    <div class="float-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="float-info">
+                        <span class="float-number">25%</span>
+                        <span class="float-label">Downtime Reduced</span>
+                    </div>
+                </div>
+
+                <div class="float-card float-card-3">
+                    <div class="float-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="float-info">
+                        <span class="float-number">180+</span>
+                        <span class="float-label">Hours Saved</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Stats Strip -->
-    <section class="stats-strip">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-value" data-target="25">0</div>
-                    <div class="stat-label">Downtime Reduced</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-value" data-target="30">0</div>
-                    <div class="stat-label">Faster MTTR</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-value" data-target="30">0</div>
-                    <div class="stat-label">K+ Servers</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-value" data-target="180">0</div>
-                    <div class="stat-label">Hours Saved</div>
-                </div>
-            </div>
+        <div class="scroll-hint">
+            <span>scroll to explore</span>
+            <div class="scroll-arrow"></div>
         </div>
     </section>
 
-    <!-- Rest of sections unchanged... -->
-    
     <!-- About Section -->
-    <section class="section about" id="about">
-        <!-- ... same content ... -->
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">About</span>
-                <h2 class="section-title">Engineering Reliable Systems</h2>
-                <p class="section-subtitle">Production-focused SRE with regulated financial services experience</p>
-            </div>
-            
+    <section class="about" id="about">
+        <div class="section-wrapper">
+            <div class="section-tag">// about me</div>
             <div class="about-grid">
                 <div class="about-text">
-                    <p>
-                        I am a <span class="highlight">Site Reliability Engineer</span> who believes that 
-                        every alert should be actionable, every deployment reversible, and every incident 
-                        should make systems stronger.
+                    <h2 class="section-heading">
+                        Building <span class="gradient-text">reliable systems</span> that scale
+                    </h2>
+                    <p class="about-para">
+                        I'm a Site Reliability Engineer with a simple philosophy: <strong>every alert should be actionable</strong>, 
+                        <strong>every deployment reversible</strong>, and <strong>every incident should strengthen the system</strong>.
                     </p>
-                    <p>
-                        At <span class="highlight">BNP Paribas</span>, I owned on-call incident response 
-                        using PagerDuty, built full-stack observability with Dynatrace across 4,000+ 
-                        servers, and automated deployments across 30,000+ servers with Python and Ansible — 
-                        eliminating 180+ hours of manual effort and reducing deployment-related incidents 
-                        by 40%.
+                    <p class="about-para">
+                        At <strong>BNP Paribas</strong>, I owned on-call incident response via PagerDuty, built 
+                        full-stack observability with Dynatrace across 4,000+ servers, and automated 
+                        deployments across 30,000+ servers — eliminating 180+ hours of manual toil.
                     </p>
-                    <p>
-                        I hold an <span class="highlight">MSc from Cranfield University</span> and have 
-                        completed the <span class="highlight">McKinsey Forward Programme</span>. Currently 
-                        based in <span class="highlight">Shropshire, UK</span> with a Graduate Visa valid 
-                        through 2026. Seeking SRE, Platform Engineering, and Observability roles.
+                    <p class="about-para">
+                        Currently based in <strong>Shropshire, UK</strong> with a Graduate Visa valid through 2026. 
+                        MSc from Cranfield University, McKinsey Forward Programme graduate.
                     </p>
                     
-                    <div class="skills-cluster">
-                        <span class="skill-tag">Dynatrace</span>
-                        <span class="skill-tag">PagerDuty</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Ansible</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Kubernetes</span>
-                        <span class="skill-tag">Prometheus</span>
-                        <span class="skill-tag">Grafana</span>
-                        <span class="skill-tag">Linux</span>
-                        <span class="skill-tag">Terraform</span>
+                    <div class="tech-stack">
+                        <span class="tech-item">Dynatrace</span>
+                        <span class="tech-item">PagerDuty</span>
+                        <span class="tech-item">Python</span>
+                        <span class="tech-item">Ansible</span>
+                        <span class="tech-item">AWS</span>
+                        <span class="tech-item">Kubernetes</span>
+                        <span class="tech-item">Terraform</span>
+                        <span class="tech-item">Linux</span>
                     </div>
                 </div>
-                
-                <div class="info-panel">
-                    <div class="info-row">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div class="content">
-                            <h4>Location</h4>
-                            <p>Church Stretton, Shropshire, UK</p>
+
+                <div class="about-cards">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label">Location</span>
+                            <span class="info-value">Church Stretton, UK</span>
                         </div>
                     </div>
-                    <div class="info-row">
-                        <i class="fas fa-graduation-cap"></i>
-                        <div class="content">
-                            <h4>Education</h4>
-                            <p>MSc Management & Information Systems, Cranfield University</p>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label">Education</span>
+                            <span class="info-value">MSc, Cranfield University</span>
                         </div>
                     </div>
-                    <div class="info-row">
-                        <i class="fas fa-id-card"></i>
-                        <div class="content">
-                            <h4>Right to Work</h4>
-                            <p>UK Graduate Visa valid until December 2026</p>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label">Visa Status</span>
+                            <span class="info-value">Graduate Visa (2026)</span>
                         </div>
                     </div>
-                    <div class="info-row">
-                        <i class="fas fa-clock"></i>
-                        <div class="content">
-                            <h4>Availability</h4>
-                            <p>Immediate — UK-wide</p>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label">Availability</span>
+                            <span class="info-value status-available">Immediate</span>
                         </div>
                     </div>
                 </div>
@@ -205,95 +272,90 @@
     </section>
 
     <!-- Experience Section -->
-    <section class="section experience" id="experience">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Experience</span>
-                <h2 class="section-title">Professional Track Record</h2>
-            </div>
-
+    <section class="experience" id="experience">
+        <div class="section-wrapper">
+            <div class="section-tag">// experience</div>
+            <h2 class="section-heading">Professional <span class="gradient-text">Track Record</span></h2>
+            
             <div class="timeline">
-                <!-- Outlier.ai -->
+                <!-- Outlier -->
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
                         <div class="timeline-header">
-                            <h3>Reliability & CI/CD Consultant</h3>
-                            <span class="timeline-date">Feb 2025 — Present</span>
+                            <div class="timeline-company">
+                                <span class="company-name">Outlier.ai</span>
+                                <span class="company-role">Reliability & CI/CD Consultant</span>
+                            </div>
+                            <span class="timeline-date">2025 — Present</span>
                         </div>
-                        <div class="org-row">
-                            <span class="org-name">Outlier.ai</span>
-                            <span class="org-location">United Kingdom (Remote)</span>
-                        </div>
-                        <ul class="timeline-list">
-                            <li>Reduced production defects by 20% across 10 repositories through Java and Python service optimisation</li>
-                            <li>Stabilised CI/CD pipelines (Jenkins, GitHub Actions), cutting release-blocking failures by 35%</li>
+                        <ul class="timeline-achievements">
+                            <li>Reduced production defects by <strong>20%</strong> across 10 repositories</li>
+                            <li>Stabilised CI/CD pipelines, cutting release failures by <strong>35%</strong></li>
                         </ul>
-                        <div class="tech-pills">
-                            <span class="tech-pill">Jenkins</span>
-                            <span class="tech-pill">GitHub Actions</span>
-                            <span class="tech-pill">Java</span>
-                            <span class="tech-pill">Python</span>
+                        <div class="timeline-tech">
+                            <span>Jenkins</span>
+                            <span>GitHub Actions</span>
+                            <span>Java</span>
+                            <span>Python</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- BNP Paribas -->
-                <div class="timeline-item">
-                    <div class="timeline-dot" style="border-color: #0d9488;"></div>
-                    <div class="timeline-card">
+                <div class="timeline-item featured">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge">
+                            <i class="fas fa-star"></i>
+                            <span>Core SRE Role</span>
+                        </div>
                         <div class="timeline-header">
-                            <h3>Site Reliability Analyst — Observability & Production Support</h3>
-                            <span class="timeline-date">Oct 2022 — Sep 2023</span>
+                            <div class="timeline-company">
+                                <span class="company-name">BNP Paribas</span>
+                                <span class="company-role">Site Reliability Analyst</span>
+                            </div>
+                            <span class="timeline-date">2022 — 2023</span>
                         </div>
-                        <div class="org-row">
-                            <span class="org-name" style="color: #0d9488;">BNP Paribas</span>
-                            <span class="org-location">Mumbai, India</span>
-                        </div>
-                        <ul class="timeline-list">
-                            <li>Provided 24/7 on-call production support via PagerDuty, maintaining 99%+ availability for 12 business-critical services</li>
-                            <li>Engineered Dynatrace observability improvements — custom dashboards, alerting, management zones — reducing downtime by 25% and improving MTTR by 30%</li>
-                            <li>Automated deployments across 30,000+ servers using Python and Ansible, saving 180+ hours and reducing manual effort by 85%</li>
-                            <li>Provisioned AWS infrastructure via ServiceNow catalogue workflows, reducing provisioning lead time by 40%</li>
-                            <li>Governed Netwrix Change Tracker across 1,200 APAC servers, achieving 98% audit coverage</li>
+                        <ul class="timeline-achievements">
+                            <li>On-call production support via PagerDuty — <strong>99%+ availability</strong> for 12 critical services</li>
+                            <li>Dynatrace observability: <strong>25% downtime reduction</strong>, <strong>30% faster MTTR</strong></li>
+                            <li>Automated deployments across <strong>30,000+ servers</strong> — 180+ hours saved</li>
+                            <li>AWS infrastructure via ServiceNow — <strong>40% lead time reduction</strong></li>
                         </ul>
-                        <div class="tech-pills">
-                            <span class="tech-pill">Dynatrace</span>
-                            <span class="tech-pill">PagerDuty</span>
-                            <span class="tech-pill">Python</span>
-                            <span class="tech-pill">Ansible</span>
-                            <span class="tech-pill">AWS</span>
-                            <span class="tech-pill">ServiceNow</span>
-                            <span class="tech-pill">Netwrix</span>
+                        <div class="timeline-tech">
+                            <span>Dynatrace</span>
+                            <span>PagerDuty</span>
+                            <span>Python</span>
+                            <span>Ansible</span>
+                            <span>AWS</span>
+                            <span>ServiceNow</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Infosys -->
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
                         <div class="timeline-header">
-                            <h3>Systems Engineer — Production Reliability & Release Engineering</h3>
-                            <span class="timeline-date">Sep 2018 — Sep 2022</span>
+                            <div class="timeline-company">
+                                <span class="company-name">Infosys Limited</span>
+                                <span class="company-role">Systems Engineer</span>
+                            </div>
+                            <span class="timeline-date">2018 — 2022</span>
                         </div>
-                        <div class="org-row">
-                            <span class="org-name">Infosys Limited</span>
-                            <span class="org-location">Pune & Mumbai, India</span>
-                        </div>
-                        <ul class="timeline-list">
-                            <li>Reduced production MTTR by 25% through Linux troubleshooting and log analysis; improved SLA attainment to 99%</li>
-                            <li>Stabilised CI/CD releases using Jenkins and GitHub Actions, reducing failed deployments by 20%</li>
-                            <li>Remediated 12 critical Log4j vulnerabilities within 7 days during security incident response</li>
-                            <li>Led Oracle database upgrades (10g to 19c) for 8 applications with 2-hour downtime windows</li>
-                            <li>Automated data processing pipelines using Perl, increasing throughput by 500 files daily</li>
+                        <ul class="timeline-achievements">
+                            <li>Reduced MTTR by <strong>25%</strong>; improved SLA to <strong>99%</strong></li>
+                            <li>Stabilised CI/CD releases — <strong>20% fewer failed deployments</strong></li>
+                            <li>Closed <strong>12 critical Log4j vulnerabilities</strong> in 7 days</li>
+                            <li>Led Oracle DB upgrades (10g to 19c) — 8 apps, 2hr downtime</li>
                         </ul>
-                        <div class="tech-pills">
-                            <span class="tech-pill">Linux</span>
-                            <span class="tech-pill">Jenkins</span>
-                            <span class="tech-pill">Oracle</span>
-                            <span class="tech-pill">PL-SQL</span>
-                            <span class="tech-pill">Perl</span>
+                        <div class="timeline-tech">
+                            <span>Linux</span>
+                            <span>Jenkins</span>
+                            <span>Oracle</span>
+                            <span>PL-SQL</span>
                         </div>
                     </div>
                 </div>
@@ -302,142 +364,124 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="section projects" id="projects">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Projects</span>
-                <h2 class="section-title">Quantified Impact</h2>
-            </div>
-
+    <section class="projects" id="projects">
+        <div class="section-wrapper">
+            <div class="section-tag">// featured projects</div>
+            <h2 class="section-heading">Quantified <span class="gradient-text">Impact</span></h2>
+            
             <div class="projects-grid">
-                <!-- IVELO -->
+                <!-- Project 1 -->
                 <div class="project-card">
-                    <div class="project-top">
-                        <div class="project-badge">
-                            <div class="project-icon blue"><i class="fas fa-rocket"></i></div>
-                            <span class="project-org">BNP Paribas</span>
-                        </div>
-                        <h3>IVELO Deployment Automation Platform</h3>
-                        <p class="project-desc">
-                            Enterprise deployment automation orchestrating reliability-focused releases 
-                            across 30,000+ servers with full rollback capabilities and health-check integration.
-                        </p>
+                    <div class="project-visual blue">
+                        <i class="fas fa-rocket"></i>
                     </div>
-                    <div class="metrics-bar">
-                        <div class="metric-cell">
-                            <strong>30K+</strong>
-                            <span>Servers</span>
-                        </div>
-                        <div class="metric-cell">
-                            <strong>85%</strong>
-                            <span>Effort Reduced</span>
-                        </div>
-                        <div class="metric-cell">
-                            <strong>180+</strong>
-                            <span>Hours Saved</span>
-                        </div>
-                        <div class="metric-cell">
-                            <strong>Zero</strong>
-                            <span>Rollback Fails</span>
+                    <div class="project-info">
+                        <span class="project-org">BNP Paribas</span>
+                        <h3 class="project-title">IVELO Deployment Automation</h3>
+                        <p class="project-desc">
+                            Enterprise deployment automation across 30,000+ servers with full rollback 
+                            traceability and automated health checks.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="p-metric">
+                                <span class="p-number">30K+</span>
+                                <span class="p-label">Servers</span>
+                            </div>
+                            <div class="p-metric">
+                                <span class="p-number">85%</span>
+                                <span class="p-label">Effort Saved</span>
+                            </div>
+                            <div class="p-metric">
+                                <span class="p-number">180+</span>
+                                <span class="p-label">Hours Saved</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Observability -->
+                <!-- Project 2 -->
                 <div class="project-card">
-                    <div class="project-top">
-                        <div class="project-badge">
-                            <div class="project-icon purple"><i class="fas fa-chart-area"></i></div>
-                            <span class="project-org">BNP Paribas</span>
-                        </div>
-                        <h3>Enterprise Observability Platform</h3>
-                        <p class="project-desc">
-                            Full-stack Dynatrace implementation with custom dashboards, automated alerting, 
-                            and ServiceNow-integrated incident workflows across 4,000+ servers.
-                        </p>
+                    <div class="project-visual purple">
+                        <i class="fas fa-chart-area"></i>
                     </div>
-                    <div class="metrics-bar">
-                        <div class="metric-cell">
-                            <strong>4K+</strong>
-                            <span>Servers</span>
-                        </div>
-                        <div class="metric-cell">
-                            <strong>50+</strong>
-                            <span>Dashboards</span>
-                        </div>
-                        <div class="metric-cell">
-                            <strong>25%</strong>
-                            <span>Less Downtime</span>
-                        </div>
-                        <div class="metric-cell">
-                            <strong>30%</strong>
-                            <span>Faster MTTR</span>
+                    <div class="project-info">
+                        <span class="project-org">BNP Paribas</span>
+                        <h3 class="project-title">Enterprise Observability Platform</h3>
+                        <p class="project-desc">
+                            Full-stack Dynatrace implementation with custom dashboards and ServiceNow 
+                            integration across 4,000+ servers.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="p-metric">
+                                <span class="p-number">4K+</span>
+                                <span class="p-label">Servers</span>
+                            </div>
+                            <div class="p-metric">
+                                <span class="p-number">25%</span>
+                                <span class="p-label">Downtime ↓</span>
+                            </div>
+                            <div class="p-metric">
+                                <span class="p-number">30%</span>
+                                <span class="p-label">MTTR ↑</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Compliance -->
+                <!-- Project 3 -->
                 <div class="project-card">
-                    <div class="project-top">
-                        <div class="project-badge">
-                            <div class="project-icon teal"><i class="fas fa-shield-halved"></i></div>
-                            <span class="project-org">BNP Paribas</span>
-                        </div>
-                        <h3>APAC Compliance & Integrity Monitoring</h3>
-                        <p class="project-desc">
-                            File integrity and compliance monitoring implementation across APAC region using 
-                            Netwrix Change Tracker, achieving regulatory compliance in 6 months.
-                        </p>
+                    <div class="project-visual teal">
+                        <i class="fas fa-shield-halved"></i>
                     </div>
-                    <div class="metrics-bar">
-                        <div class="metric-cell">
-                            <strong>1.2K</strong>
-                            <span>Servers</span>
-                        </div>
-                        <div class="metric-cell">
-                            <strong>98%</strong>
-                            <span>Audit Coverage</span>
-                        </div>
-                        <div class="metric-cell">
-                            <strong>100%</strong>
-                            <span>Compliance</span>
-                        </div>
-                        <div class="metric-cell">
-                            <strong>6</strong>
-                            <span>Months</span>
+                    <div class="project-info">
+                        <span class="project-org">BNP Paribas</span>
+                        <h3 class="project-title">APAC Compliance Monitoring</h3>
+                        <p class="project-desc">
+                            File integrity and compliance monitoring using Netwrix Change Tracker, 
+                            achieving full regulatory compliance in 6 months.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="p-metric">
+                                <span class="p-number">1.2K</span>
+                                <span class="p-label">Servers</span>
+                            </div>
+                            <div class="p-metric">
+                                <span class="p-number">98%</span>
+                                <span class="p-label">Coverage</span>
+                            </div>
+                            <div class="p-metric">
+                                <span class="p-number">100%</span>
+                                <span class="p-label">Compliance</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Database Migration -->
+                <!-- Project 4 -->
                 <div class="project-card">
-                    <div class="project-top">
-                        <div class="project-badge">
-                            <div class="project-icon amber"><i class="fas fa-database"></i></div>
-                            <span class="project-org">LexisNexis via Infosys</span>
-                        </div>
-                        <h3>Production Database Migration Validation</h3>
-                        <p class="project-desc">
-                            Automated data validation routines for Oracle database upgrades (10g to 19c), 
-                            delivering zero data loss with 50% reduction in manual verification.
-                        </p>
+                    <div class="project-visual amber">
+                        <i class="fas fa-database"></i>
                     </div>
-                    <div class="metrics-bar">
-                        <div class="metric-cell">
-                            <strong>8</strong>
-                            <span>Applications</span>
-                        </div>
-                        <div class="metric-cell">
-                            <strong>99.9%</strong>
-                            <span>Accuracy</span>
-                        </div>
-                        <div class="metric-cell">
-                            <strong>2hr</strong>
-                            <span>Downtime</span>
-                        </div>
-                        <div class="metric-cell">
-                            <strong>50%</strong>
-                            <span>Less Manual</span>
+                    <div class="project-info">
+                        <span class="project-org">LexisNexis via Infosys</span>
+                        <h3 class="project-title">Oracle DB Migration Validation</h3>
+                        <p class="project-desc">
+                            Automated data validation for Oracle upgrades (10g to 19c) with zero data 
+                            loss and 50% reduction in manual verification.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="p-metric">
+                                <span class="p-number">8</span>
+                                <span class="p-label">Apps</span>
+                            </div>
+                            <div class="p-metric">
+                                <span class="p-number">99.9%</span>
+                                <span class="p-label">Accuracy</span>
+                            </div>
+                            <div class="p-metric">
+                                <span class="p-number">2hr</span>
+                                <span class="p-label">Downtime</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -446,212 +490,133 @@
     </section>
 
     <!-- Portfolio Showcase -->
-    <section class="section portfolio-showcase" id="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Craft</span>
-                <h2 class="section-title">This Portfolio</h2>
-                <p class="section-subtitle">Built with the same reliability principles I apply to production systems</p>
-            </div>
-
-            <div class="showcase-grid">
-                <div class="browser-mockup">
-                    <div class="browser-chrome">
-                        <span class="chrome-dot red"></span>
-                        <span class="chrome-dot yellow"></span>
-                        <span class="chrome-dot green"></span>
-                        <div class="address-bar">
-                            <i class="fas fa-lock"></i>
-                            arvindswami014uk.github.io/portfolio
-                        </div>
-                    </div>
-                    <div class="browser-viewport">
-                        <div class="preview-stats">
-                            <div class="preview-stat">
-                                <div class="value">98</div>
-                                <div class="name">Performance</div>
+    <section class="portfolio" id="portfolio">
+        <div class="section-wrapper">
+            <div class="section-tag">// this.portfolio</div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-visual">
+                    <div class="browser-window">
+                        <div class="browser-bar">
+                            <div class="browser-dots">
+                                <span></span><span></span><span></span>
                             </div>
-                            <div class="preview-stat">
-                                <div class="value">100</div>
-                                <div class="name">Accessibility</div>
-                            </div>
-                            <div class="preview-stat">
-                                <div class="value">100</div>
-                                <div class="name">Best Practices</div>
-                            </div>
-                            <div class="preview-stat">
-                                <div class="value">100</div>
-                                <div class="name">SEO</div>
+                            <div class="browser-url">
+                                <i class="fas fa-lock"></i>
+                                arvindswami014uk.github.io
                             </div>
                         </div>
-                        <div class="preview-graph"></div>
+                        <div class="browser-content">
+                            <div class="lighthouse-grid">
+                                <div class="lh-score">
+                                    <span class="lh-number">98</span>
+                                    <span class="lh-label">Performance</span>
+                                </div>
+                                <div class="lh-score">
+                                    <span class="lh-number">100</span>
+                                    <span class="lh-label">Accessibility</span>
+                                </div>
+                                <div class="lh-score">
+                                    <span class="lh-number">100</span>
+                                    <span class="lh-label">Best Practices</span>
+                                </div>
+                                <div class="lh-score">
+                                    <span class="lh-number">100</span>
+                                    <span class="lh-label">SEO</span>
+                                </div>
+                            </div>
+                            <div class="performance-chart"></div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="showcase-content">
-                    <h3>Reliability-First Design</h3>
-                    <p>
-                        This portfolio demonstrates my engineering approach: accessibility as fault tolerance, 
-                        performance as user experience, zero runtime dependencies for core functionality, 
-                        and graceful degradation under all conditions.
+                <div class="portfolio-content">
+                    <h2 class="section-heading">
+                        Built with <span class="gradient-text">reliability</span> in mind
+                    </h2>
+                    <p class="portfolio-desc">
+                        This portfolio demonstrates my engineering principles: accessibility as fault 
+                        tolerance, performance as user experience, and zero dependencies for core functionality.
                     </p>
-                    <div class="quality-list">
-                        <div class="quality-item">
-                            <div class="quality-icon"><i class="fas fa-bolt"></i></div>
-                            <span class="quality-text">Core content accessible without JavaScript</span>
-                        </div>
-                        <div class="quality-item">
-                            <div class="quality-icon"><i class="fas fa-universal-access"></i></div>
-                            <span class="quality-text">WCAG 2.1 AA compliant, full keyboard navigation</span>
-                        </div>
-                        <div class="quality-item">
-                            <div class="quality-icon"><i class="fas fa-tachometer-alt"></i></div>
-                            <span class="quality-text">~98 Lighthouse score, optimised critical path</span>
-                        </div>
-                        <div class="quality-item">
-                            <div class="quality-icon"><i class="fas fa-mobile-alt"></i></div>
-                            <span class="quality-text">Mobile-first responsive at all breakpoints</span>
-                        </div>
-                        <div class="quality-item">
-                            <div class="quality-icon"><i class="fas fa-shield-alt"></i></div>
-                            <span class="quality-text">Zero external dependencies for core functionality</span>
-                        </div>
-                    </div>
-                    <div class="showcase-actions">
-                        <a href="https://github.com/arvindswami014uk/portfolio" class="btn btn-light" target="_blank">
-                            <i class="fab fa-github"></i> View Source
-                        </a>
-                        <a href="#" class="btn btn-outline-light" onclick="alert('Full Lighthouse report available in repository'); return false;">
-                            <i class="fas fa-file-alt"></i> Report
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Insights Section -->
-    <section class="section insights" id="insights">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Writing</span>
-                <h2 class="section-title">Technical Insights</h2>
-            </div>
-
-            <div class="insights-grid">
-                <article class="insight-card">
-                    <span class="insight-date"><i class="fas fa-calendar"></i> Coming Soon</span>
-                    <h3><a href="#">Lessons from Automating 30,000 Server Deployments</a></h3>
-                    <p>Why deployment automation is about building trust, not just writing scripts. Platform engineering's human factors.</p>
-                    <div class="insight-tags">
-                        <span>Automation</span>
-                        <span>Platform Engineering</span>
-                    </div>
-                </article>
-
-                <article class="insight-card">
-                    <span class="insight-date"><i class="fas fa-calendar"></i> Coming Soon</span>
-                    <h3><a href="#">From Alert Noise to Actionable Observability</a></h3>
-                    <p>How we reduced on-call fatigue by rethinking our Dynatrace strategy and management zone architecture.</p>
-                    <div class="insight-tags">
-                        <span>Observability</span>
-                        <span>Dynatrace</span>
-                    </div>
-                </article>
-
-                <article class="insight-card">
-                    <span class="insight-date"><i class="fas fa-calendar"></i> Coming Soon</span>
-                    <h3><a href="#">The 3 AM Incident Response Playbook</a></h3>
-                    <p>Mental models and systematic checklists for when production breaks and you need to fix it without making it worse.</p>
-                    <div class="insight-tags">
-                        <span>Incident Response</span>
-                        <span>SRE</span>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section contact" id="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-label">Contact</span>
-                    <h3>Let's Discuss Your Reliability Challenges</h3>
-                    <p>I am actively seeking SRE, Platform Engineering, and Observability roles in the United Kingdom. Available immediately with full right to work.</p>
-                    
-                    <div class="contact-method">
-                        <div class="icon"><i class="fas fa-envelope"></i></div>
-                        <div class="details">
-                            <h4>Email</h4>
-                            <a href="mailto:arvindswami014@gmail.com">arvindswami014@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-method">
-                        <div class="icon"><i class="fas fa-phone"></i></div>
-                        <div class="details">
-                            <h4>Phone</h4>
-                            <a href="tel:+4407767978917">07767 978 917</a>
-                        </div>
-                    </div>
-                    <div class="contact-method">
-                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="details">
-                            <h4>Location</h4>
-                            <span>Church Stretton, Shropshire, UK</span>
-                        </div>
-                    </div>
-
-                    <div class="social-row">
-                        <a href="https://linkedin.com/in/arvindswami014" target="_blank" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/arvindswami014uk" target="_blank" aria-label="GitHub">
+                    <ul class="feature-list">
+                        <li>
+                            <i class="fas fa-bolt"></i>
+                            <span>Works without JavaScript</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-universal-access"></i>
+                            <span>WCAG 2.1 AA compliant</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>~98 Lighthouse score</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Mobile-first responsive</span>
+                        </li>
+                    </ul>
+                    <div class="portfolio-actions">
+                        <a href="https://github.com/arvindswami014uk/portfolio" class="btn btn-primary" target="_blank">
                             <i class="fab fa-github"></i>
-                        </a>
-                        <a href="./assets/arvind-ganeshan-cv.pdf" target="_blank" aria-label="CV">
-                            <i class="fas fa-file-pdf"></i>
+                            <span>View Source</span>
                         </a>
                     </div>
                 </div>
-
-                <form class="contact-form" id="contactform" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="SRE Opportunity / Project Discussion" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Tell me about the role or your reliability challenges..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
-                        <i class="fas fa-paper-plane"></i> Send Message
-                    </button>
-                </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>© 2025 Arvind Swami Ganeshan. Built with reliability in mind.</p>
-                <p>Site Reliability Engineer • United Kingdom</p>
+    <!-- Contact / Footer -->
+    <section class="contact" id="contact">
+        <div class="section-wrapper">
+            <div class="contact-content">
+                <div class="section-tag">// get in touch</div>
+                <h2 class="section-heading contact-heading">
+                    Let's build <span class="gradient-text">reliable systems</span> together
+                </h2>
+                <p class="contact-desc">
+                    I'm actively seeking SRE, Platform Engineering, and Observability roles in the UK. 
+                    Available immediately with full right to work.
+                </p>
+                
+                <div class="contact-links">
+                    <a href="mailto:arvindswami014@gmail.com" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">arvindswami014@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="tel:+4407767978917" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">Phone</span>
+                            <span class="contact-value">07767 978 917</span>
+                        </div>
+                    </a>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">Location</span>
+                            <span class="contact-value">Church Stretton, UK</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bar">
+                    <span class="copyright">© 2025 Arvind Swami Ganeshan</span>
+                    <span class="footer-tag">SRE • UK • Available Now</span>
+                </div>
             </div>
         </div>
-    </footer>
+    </section>
 
     <script src="./js/main.js"></script>
 </body>
